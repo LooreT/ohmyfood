@@ -1,7 +1,7 @@
+
+
 h1 {
     font-size: 20px;
-    margin: 16px 0px 16px 16px;
-    padding-top: 20px;
 }
 
 .full-page { 
@@ -95,7 +95,7 @@ width: 80%;
 .button-command {
     display: flex;
     justify-content: center;
-    margin: 0 0 16px 0;
+    margin: 24px 0 24px 0;
 }
 
 
@@ -107,6 +107,18 @@ width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.h1-heart {
+    display: flex;
+    margin: 0 16px 16px 16px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.margin-h1 {
+    margin-right: auto;
+
 }
 
 
