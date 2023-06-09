@@ -13,8 +13,10 @@
 <body>
 
     <header>
-        <!-- <a href="#"> <i class="fa-regular fa-arrow-left"></a> -->
-        <img src="../assets/Images et textes Ohmyfood/images/logo/ohmyfood.png">
+        <a href="#" class="position-arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <img class="header-img" src="../assets/Images et textes Ohmyfood/images/logo/ohmyfood.png ">
     </header>
 
     <main>
@@ -24,18 +26,23 @@
 
         <div class="full-page">
             <div class="h1-heart">
-            <h1 class="margin-h1">La palette du goût</h1>
-            <i class="fa-regular fa-heart"></i>
+                <h1 class="margin-h1">La palette du goût</h1>
+
+                <div class="position-heart">
+                    <i class="fa-regular fa-heart heart-i heart-empty"></i>
+                    <i class="fa-solid fa-heart heart-i heart-full"></i>
+                </div>
+
             </div>
 
 
             <!-- SECTION ENTREES -->
-            <section class="padding-sections">
+            <section class="padding-sections container-1">
 
                 <h2>Entrées<span class="underline"></span></h2>
 
                 <div class="section-cards">
-                    <div class="cards-menu container-cards">
+                    <div class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Fricassée d'escargot</h3>
                             <p class="size-text text-overflow ">Au piment d'espelette </p>
@@ -45,7 +52,7 @@
                         </div>
                     </div>
 
-                    <article class="cards-menu container-cards">
+                    <article class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Foie gras de canard mi-cuit</h3>
                             <p class="size-text text-overflow ">Et ses copeaux de truffe noire</p>
@@ -56,7 +63,7 @@
                     </article>
 
 
-                    <article class="cards-menu container-cards">
+                    <article class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Oeuf au plat</h3>
                             <p class="size-text text-overflow ">Assaisonné à la truffe sur lit de caviar</p>
@@ -74,12 +81,12 @@
 
 
             <!-- SECTION PLATS -->
-            <section class="padding-sections">
+            <section class="padding-sections container-2">
 
                 <h2>Plats<span class="underline"></span></h2>
 
                 <div class="section-cards">
-                    <div class="cards-menu container-cards">
+                    <div class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Filet de bœuf aux herbes</h3>
                             <p class="size-text text-overflow ">Accompagné de sa ribambelle de légumes</p>
@@ -89,7 +96,7 @@
                         </div>
                     </div>
 
-                    <article class="cards-menu container-cards">
+                    <article class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3 class="text-overflow">Parmentier de queue de bœuf</h3>
                             <p class="size-text text-overflow ">À la truffe noire sur sa purée de panais</p>
@@ -100,7 +107,7 @@
                     </article>
 
 
-                    <article class="cards-menu container-cards">
+                    <article class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Filet de turbot</h3>
                             <p class="size-text text-overflow ">Aux agrumes</p>
@@ -116,25 +123,25 @@
 
 
             <!-- SECTION DESSERT -->
-            <section class="padding-sections">
+            <section class="padding-sections container-3">
 
                 <h2>Dessert<span class="underline"></span></h2>
 
                 <div class="section-cards">
-                    <div class="cards-menu container-cards">
+                    <div class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Paris-Brest</h3>
-                            <p class="size-text text-overflow ">Revisité</p>
+                            <p class="size-text text-overflow">Revisité</p>
                         </div>
                         <div class="price">
                             <p>18€</p>
                         </div>
                     </div>
 
-                    <article class="cards-menu container-cards">
+                    <article class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3 class="text-overflow">Macaron au chocolat d'exception</h3>
-                            <p class="size-text text-overflow ">Et glace à la vanille de Madagascar</p>
+                            <p class="size-text text-overflow">Et glace à la vanille de Madagascar</p>
                         </div>
                         <div class="price">
                             <p>22€</p>
@@ -142,7 +149,7 @@
                     </article>
 
 
-                    <article class="cards-menu container-cards">
+                    <article class="cards-menu container-cards card">
                         <div class="text-cards">
                             <h3>Mousse au chocolat </h3>
                             <p class="size-text text-overflow">Au piment d'Espelette et à la truffe noire</p>

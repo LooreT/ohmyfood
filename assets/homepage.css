@@ -17,18 +17,18 @@
 
 
 
-/* LOADER */
+/* LOADER faire disparaitre et qu'il prenne toute la place*/ 
 
 
 .loader-container {
     position: absolute;
-    background: white;
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease-in-out;
+    animation: visibility 1.5s ease forwards;
     z-index: 1;
 }
 
@@ -39,18 +39,38 @@
     width: 120px;
     height: 120px;
     animation: spin 1.5s linear infinite;
+    position: absolute;
+    position: fixed;
+    top: 50%;
+
   }
 
-
+ @keyframes opacity {
+    0% { opacity: 1; }
+    100% { visibility: hidden; }
+    
+  }
 
   @keyframes spin {
     0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg);}
   }
 
-  @-webkit-keyframes spin {
-100% {visibility: hidden}
-}
+@keyframes visibility {
+    99% {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+  }
+
+
+
+
 
 
   /* Paris*/
@@ -180,5 +200,6 @@
     justify-content: space-between;
     height: 100%;
     color: black;
+    gap: 5px;
 }
 

@@ -5,6 +5,15 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    position: relative;
+}
+
 
 :root {
     --main-bg-color: #9356DC;
@@ -19,16 +28,24 @@
 header {
     display: flex;
     justify-content: center;
-    height: 39px;
-    padding: 40px;
+    padding: 25px 0 25px 0;
     background-color: white;
     box-shadow: 0 0 10px 0;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+    align-items: center;
 }
 
-header .img {
-    width: 30%;
+.header-img {
+    width: 185px;
+    height: 40px
+}
 
+.position-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    padding: 5px;
 }
 
 /* /------------* button *-------------/ */
@@ -57,33 +74,37 @@ header .img {
 
 /* HEART */
 
-.heart-icon {
-    position: relative;
+
+.heart-i {
+    position: absolute;
+}
+
+.heart-full {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.heart-full:hover {
+opacity: 1;
+color: transparent;
+-webkit-background-clip: text;
+background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+
+
+.position-heart {
     display: flex;
+    width: 1.875rem;
+    height: 1.875rem;
     justify-content: center;
     align-items: center;
-    margin-right: 16px;
-    &--empty{
-        position: absolute;
-        color: black;
-    }
-    &--full{
-        position: absolute;
-        opacity: 0;
-        background: linear-gradient(#FF79DA, #9356DC);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: all 400ms;
-    }
-    &:hover &--full{
-        opacity: 1;
-
-    }
-    &:hover &--empty{
-        opacity: 0;
-    }
 }
+
+
+
+
 
 
 
