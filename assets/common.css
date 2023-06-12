@@ -19,18 +19,18 @@ body {
     --main-bg-color: #9356DC;
     --secondary-color: #FF79DA;
     --third-color: #99E2D0;
-  }
+}
 
 
 
 
-  /* /---------------------------------* header *---------------------------------------/ */
+/* /---------------------------------* header *---------------------------------------/ */
 header {
     display: flex;
     justify-content: center;
     padding: 25px 0 25px 0;
     background-color: white;
-    box-shadow: 0 0 10px 0;
+    box-shadow: 0 0 3px 0;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
     align-items: center;
 }
@@ -68,7 +68,7 @@ header {
 .main-button:hover {
     background: linear-gradient(#ff8fdf, #975fdb);
     box-shadow: 4px 4px 4px rgb(180, 180, 180);
-    transition : 0.3s;
+    transition: 0.3s;
 }
 
 
@@ -77,6 +77,7 @@ header {
 
 .heart-i {
     position: absolute;
+    cursor: pointer;
 }
 
 .heart-full {
@@ -86,10 +87,10 @@ header {
 }
 
 .heart-full:hover {
-opacity: 1;
-color: transparent;
--webkit-background-clip: text;
-background-image: linear-gradient(#FF79DA, #9356DC);
+    opacity: 1;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 
@@ -112,7 +113,7 @@ background-image: linear-gradient(#FF79DA, #9356DC);
 
 ul {
     list-style-type: none;
-    padding:0;
+    padding: 0;
 }
 
 li {
@@ -126,7 +127,7 @@ footer {
     background-color: #353535;
     text-decoration: white;
     padding: 22px 25px;
-    
+
 }
 
 li a {
@@ -149,5 +150,3 @@ footer h3 {
 .padding-sections {
     padding: 0 16px 0 16px;
 }
-
-

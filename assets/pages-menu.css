@@ -2,7 +2,7 @@ h1 {
     font-size: 20px;
 }
 
-.full-page { 
+.full-page {
     border-radius: 20px 20px 0 0;
     margin: -40px 0px 0px 0px;
     z-index: 1;
@@ -28,61 +28,92 @@ h1 {
 }
 
 .cards-menu {
-    
     height: 53px;
     border-radius: 20px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+    overflow: hidden;
 }
 
 
 /* ANIMATION CARDS  */
 
-.container-1{
+.container-1 {
     animation: fadeIn 0.5s ease 0.5s forwards;
     opacity: 0;
 }
 
-.container-2{
+.container-2 {
     animation: fadeIn 2s ease 0.5s forwards;
     opacity: 0;
 }
 
-.container-3{
-    animation: fadeIn 3s ease 0.5s forwards;
+.container-3 {
+    animation: fadeIn 4s ease 0.5s forwards;
     opacity: 0;
 }
-  
-  .card {
-    background-color: #eaeaea;
-    opacity: 1;
-    transition: opacity 3s;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* ANIMATION MENU  */
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    padding: 0 0.9375rem;
+    background-color: #99e2d0;
+    height: 80px;
+    margin-right: -6em;
+    margin-left: 30px;
+}
+
+
+.cards-menu:hover .check {
+    margin-right: -1em;
+    /* transition: margin-right .4s ease-in-out; */
+    transition: margin-right 0.5s;
+}
+
+.cards-menu:hover .text-cards {
+    width: 65%
+}
+
+
+.cards-menu:not(:hover) .check {
+    transition: margin-right 0.5s;
+    margin-right: -6em;
+}
+
+.cards-menu:not(:hover) .text-cards {
+    transition: width 0.5s;
+    width: 85%;
+}
+
 
 
 /* CARDS  */
 
-
-/* a suppr html et css
-
-.container-cards {
+.text-cards {
+    margin-right: auto;
     display: flex;
-    padding: 5px;
-} */
-
-
-.text-cards { 
-margin-right: auto;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 100%;
-width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
 }
 
 
@@ -109,7 +140,7 @@ width: 80%;
     padding: 13px;
     align-items: center;
     width: -webkit-fill-available;
-    
+
 }
 
 
@@ -147,5 +178,3 @@ width: 80%;
     margin-right: auto;
 
 }
-
-
