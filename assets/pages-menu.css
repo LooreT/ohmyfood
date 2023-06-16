@@ -2,11 +2,15 @@ h1 {
     font-size: 20px;
 }
 
+.price p {
+    font-weight: 600;
+}
+
 .full-page {
     border-radius: 20px 20px 0 0;
     margin: -40px 0px 0px 0px;
     z-index: 1;
-    background-color: white;
+    background-color: #F6F6F6;
     position: relative;
 }
 
@@ -104,6 +108,11 @@ h1 {
 }
 
 
+.check i {
+    color: white;
+}
+
+
 
 /* CARDS  */
 
@@ -129,11 +138,6 @@ h1 {
 }
 
 
-/* Repris */
-.padding-sections {
-    padding: 0 16px 0 16px;
-}
-
 
 .container-cards {
     display: flex;
@@ -153,7 +157,7 @@ h1 {
 .button-command {
     display: flex;
     justify-content: center;
-    margin: 24px 0 24px 0;
+    padding: 24px 0 24px 0;
 }
 
 
@@ -176,5 +180,74 @@ h1 {
 
 .margin-h1 {
     margin-right: auto;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+
+.padding-sections {
+    width: 450px;
+}
+
+.full-page {
+    border-radius: 20px 20px 0 0;
+    margin: -40px 150px 0 150px;
+    z-index: 1;
+    background-color: #F6F6F6;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-heart {
+    gap: 10px
+}
+
+
+
+}
+
+
+/* DESKTOP  */
+@media (min-width:1025px) {
+
+
+.full-page {
+    border-radius: 20px 20px 0 0;
+    margin: -40px 150px 0 150px;
+    z-index: 1;
+    background-color: #F6F6F6;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.h1-heart {
+    justify-content: center;
+    gap: 10px
+}
+
+
+.margin-h1 {
+    margin-right: 0;
+}
+
+.padding-sections {
+    width: 450px;
+}
+
+
+
+
+
 
 }
