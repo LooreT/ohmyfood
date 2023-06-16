@@ -14,9 +14,6 @@ h1 {
     position: relative;
 }
 
-
-
-
 .underline {
     border: solid 1px #99E2D0;
     display: block;
@@ -88,7 +85,6 @@ h1 {
 
 .cards-menu:hover .check {
     margin-right: -1em;
-    /* transition: margin-right .4s ease-in-out; */
     transition: margin-right 0.5s;
 }
 
@@ -113,7 +109,6 @@ h1 {
 }
 
 
-
 /* CARDS  */
 
 .text-cards {
@@ -125,9 +120,6 @@ h1 {
     width: 80%;
 }
 
-
-
-/* repris  */
 .section-cards {
     display: flex;
     gap: 22px;
@@ -136,8 +128,6 @@ h1 {
     margin: 16px 0 16px 0;
 
 }
-
-
 
 .container-cards {
     display: flex;
@@ -208,8 +198,6 @@ h1 {
 .h1-heart {
     gap: 10px
 }
-
-
 
 }
 
