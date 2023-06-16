@@ -96,6 +96,7 @@ header {
 .heart-full:hover {
     opacity: 1;
     color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient(#FF79DA, #9356DC);
 }
