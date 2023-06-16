@@ -1,32 +1,28 @@
-
 :root {
     --main-bg-color: #9356DC;
     --secondary-color: #FF79DA;
     --third-color: #99E2D0;
-  }
-
-
+}
 
 
 .adress {
     display: flex;
     justify-content: center;
-    background-color:#EAEAEA;
+    background-color: #EAEAEA;
     padding: 30px;
 }
 
 
 .restaurants-background {
-background-color: #F3F3F3;
+    background-color: #F3F3F3;
 }
 
 .restaurants-padding-top {
-padding-top: 30px;
+    padding-top: 30px;
 }
 
 
-
-/* LOADER */ 
+/* LOADER */
 
 
 .loader-container {
@@ -42,7 +38,8 @@ padding-top: 30px;
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
+    border: 16px solid #f3f3f3;
+    /* Light grey */
     border-top: 16px solid var(--main-bg-color);
     border-radius: 50%;
     width: 120px;
@@ -52,18 +49,28 @@ padding-top: 30px;
     position: fixed;
     top: 50%;
 
-  }
+}
 
- @keyframes opacity {
-    0% { opacity: 1; }
-    100% { visibility: hidden; }
-    
-  }
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg);}
-  }
+    100% {
+        visibility: hidden;
+    }
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes visibility {
     99% {
@@ -75,19 +82,15 @@ padding-top: 30px;
         opacity: 0;
         z-index: -1;
     }
-  }
+}
 
 
+/* Paris*/
 
-
-
-
-  /* Paris*/
-
-  .margin-icon {
+.margin-icon {
     margin-right: 10px;
-  }
-  
+}
+
 
 /* reservation */
 
@@ -99,12 +102,8 @@ padding-top: 30px;
     padding: 30px;
     background-color: #F3F3F3;
     text-align: center;
-    
+
 }
-
-
-
-
 
 
 /* Fonction  */
@@ -147,6 +146,7 @@ padding-top: 30px;
     display: flex;
 
 }
+
 .background-new {
     height: 20px;
     position: absolute;
@@ -155,7 +155,7 @@ padding-top: 30px;
     padding: 10px;
     background-color: #99E2D0;
     border-radius: 5px;
-    color:#008766;
+    color: #008766;
 
 }
 
@@ -180,6 +180,7 @@ padding-top: 30px;
     text-decoration: none;
 
 }
+
 .card-restaurants img {
     border-radius: 20px 20px 0 0;
     width: 100%;
@@ -199,7 +200,7 @@ padding-top: 30px;
     display: flex;
     padding: 10px;
     align-items: center;
-    
+
 }
 
 .text-cards {
@@ -211,8 +212,6 @@ padding-top: 30px;
     color: black;
     gap: 5px;
 }
-
-
 
 
 /* MEDIA QUERIES  */
@@ -233,12 +232,12 @@ padding-top: 30px;
     .button-fonction {
         display: flex;
         margin: 20px 0 20px 0;
-        flex-direction:row ;
+        flex-direction: row;
         justify-content: space-between;
-        gap:0;
+        gap: 0;
     }
 
-    .padding-sections { 
+    .padding-sections {
         padding: 0px 120px 0 120px;
     }
 
@@ -265,24 +264,19 @@ padding-top: 30px;
     }
 
     .card-restaurants {
-    width: 48%;
-    height: 220px;
-    border-radius: 20px;
-    background-color: white;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    display: flex;
-    text-decoration: none; 
-}
+        width: 48%;
+        height: 220px;
+        border-radius: 20px;
+        background-color: white;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        display: flex;
+        text-decoration: none;
+    }
 
-.card-restaurants img {
-    width: 100%;
-    height: 150px;
-}
-
-
-        
-
-
+    .card-restaurants img {
+        width: 100%;
+        height: 150px;
+    }
 
 
 }
