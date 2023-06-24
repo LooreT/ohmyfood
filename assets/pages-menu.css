@@ -2,6 +2,10 @@ h1 {
     font-size: 20px;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 .price p {
     font-weight: 600;
 }

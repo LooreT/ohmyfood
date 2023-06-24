@@ -91,6 +91,12 @@
     margin-right: 10px;
 }
 
+.input-style {
+    background-color: #EAEAEA;
+    border: 0;
+    width: 120px;
+}
+
 
 /* reservation */
 
@@ -140,6 +146,11 @@
 }
 
 
+.mini-card i:hover {
+    color: var(--main-bg-color);
+}
+
+
 /* NEW */
 
 .container-img {
@@ -148,7 +159,7 @@
 }
 
 .background-new {
-    height: 20px;
+    height: 12px;
     position: absolute;
     right: 20px;
     top: 10px;
@@ -157,6 +168,10 @@
     border-radius: 5px;
     color: #008766;
 
+}
+
+.background-new p {
+    font-size: 13px;
 }
 
 .button-fonction {
